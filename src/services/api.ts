@@ -9,5 +9,14 @@ export const getTodosIds = async () => {
 }
 
 export const getTodo = async (id: number) => {
+    console.log('====> id => ', id)
     return (await axiosInstance.get<Todo>(`todos/${id}`)).data;
+}
+
+export const createTodo = async (data: Todo) => {
+    await axiosInstance.post('todos', data)
+}
+
+export const updateTodo = async (data: Todo) => {
+    await axiosInstance.put(`todos/${data.id}`)
 }

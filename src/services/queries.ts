@@ -8,11 +8,13 @@ export function useTodosIds() {
     })
 }
 
+// 46:46
 export function useTodos(ids: (number | undefined)[] | undefined) {
+    console.log(ids)
     return useQueries({
         queries: (ids ?? []).map( (id) => {
             return {
-                queryKey: ['todo'],
+                queryKey: ['todo', {id}],
                 queryFn: () => getTodo(id!)
             }
         })
