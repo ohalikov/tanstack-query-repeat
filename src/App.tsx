@@ -1,8 +1,17 @@
-import Todos from "./components/Todos";
+// import Todos from "./components/Todos";
+
+import { Products } from "./components/Products";
+import { Projects } from "./components/Projects";
 
 function App() {
+  return (
+    <>
+      <Projects/>
+      {/* <Products /> */}
+    </>
+  )
 
-  return <Todos/>
+  // return <Todos/>
   // const { isPending, error, data } = useQuery({
   //   queryKey: ['repoData'],
   //   queryFn: () =>
