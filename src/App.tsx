@@ -1,13 +1,13 @@
 // import Todos from "./components/Todos";
 
 import { Products } from "./components/Products";
-import { Projects } from "./components/Projects";
+// import { Projects } from "./components/Projects";
 
 function App() {
   return (
     <>
-      <Projects/>
-      {/* <Products /> */}
+      {/* <Projects/> */}
+      <Products />
     </>
   )
 
